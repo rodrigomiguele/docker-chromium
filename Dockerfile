@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --update chromium libexif-dev mesa-gles mesa-gl mesa-dri-swrast v4l-utils-dev pango eudev-libs libcanberra-gtk3 libcanberra-gtk2 ghostscript-fonts fontsproto && \
+RUN apk add --update chromium libexif udev && \
     apk info --purge
 
 ENTRYPOINT ["chromium-browser"]
