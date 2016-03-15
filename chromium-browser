@@ -10,5 +10,4 @@ docker run -it --rm \
 	--device /dev/snd \
 	-v /dev/shm/:/dev/shm/ \
 	-v /usr/share/fonts/:/usr/share/fonts/ \
-	-v /var/run/dbus/:/var/run/dbus/ \
 	rodrigomiguele/chromium "$@"
